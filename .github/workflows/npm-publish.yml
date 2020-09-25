@@ -6,7 +6,7 @@ on:
 
 jobs:
   publish-npm:
-#     needs: test
+    #     needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -14,12 +14,11 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm build
+      - run: yarn install
+      - run: yarn build
       - run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-
 #   publish-gpr:
 #     needs: build
 #     runs-on: ubuntu-latest

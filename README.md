@@ -1,6 +1,4 @@
-# markov-typescript [![NPM version](https://badge.fury.io/js/markov-typescript.svg)](http://badge.fury.io/js/markov-typescript)
-
-[![Build Status](https://travis-ci.org/trwolfe13/markov-typescript.svg?branch=master)](https://travis-ci.org/trwolfe13/markov-typescript) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/78837c971b4a49f88c512feff12f4cd4)](https://www.codacy.com/app/trwolfe13/markov-typescript?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=trwolfe13/markov-typescript&amp;utm_campaign=Badge_Grade) [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/78837c971b4a49f88c512feff12f4cd4)](https://www.codacy.com/app/trwolfe13/markov-typescript?utm_source=github.com&utm_medium=referral&utm_content=trwolfe13/markov-typescript&utm_campaign=Badge_Coverage)
+# markov-typescript
 
 A Markov Chain library written in TypeScript, inspired by [otac0n/markov](https://www.github.com/otac0n/markov) and [chriscore/MarkovSharp](https://www.github.com/chriscore/MarkovSharp).
 
@@ -10,8 +8,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-```batchfile
-npm i --save markov-typescript
+```bash
+yarn add @0x77/markov-typescript
 ```
 
 ### Usage
@@ -19,7 +17,7 @@ npm i --save markov-typescript
 Import types from package:
 
 ```typescript
-import * as Markov from "markov-typescript";
+import * as Markov from "@0x77/markov-typescript";
 ```
 
 Code sample
@@ -30,31 +28,26 @@ chain.learn("the quick brown fox jumped over the lazy dog".split(" "));
 chain.learn("the quick brown dog jumped over the lazy cat".split(" "));
 chain.learn("the quick brown cat jumped over the lazy fox".split(" "));
 for (let x = 0; x < 10; x++) {
-    console.log(chain.walk().join(" "));
+  console.log(chain.walk().join(" "));
 }
-```
-
-## Running the Tests
-
-```batchfile
-npm run test
 ```
 
 ## Building the project
 
-```batchfile
-npm run build
+```bash
+yarn build
 ```
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/trwolfe13/markov-typescript/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/0x77dev/markov-typescript/tags).
 
 ## Authors
 
-* **Tom Wolfe** - *Initial work* - [trwolfe13](https://github.com/trwolfe13)
+- **Tom Wolfe** - _Initial work_ - [trwolfe13](https://github.com/trwolfe13)
+- **Mikahil Marynenko** - _Dependencies, package optimizations_ - [trwolfe13](https://github.com/0x77dev)
 
-See also the list of [contributors](https://github.com/trwolfe13/markov-typescript/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/0x77dev/markov-typescript/contributors) who participated in this project.
 
 ## License
 
@@ -62,5 +55,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-* Thanks to [otac0n](https://www.github.com/otac0n) for the original .NET codebase.
-* Thanks to [chriscore](https://www.github.com/chriscore) for the second reference and unit tests.
+- Thanks to [otac0n](https://www.github.com/otac0n) for the original .NET codebase.
+- Thanks to [chriscore](https://www.github.com/chriscore) for the second reference and unit tests.

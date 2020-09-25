@@ -3,20 +3,15 @@
   "version": "1.2.0",
   "description": "A Markov Chain library written in Typescript.",
   "main": "./dist/index.js",
-  "typings":  "./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "npm run clean && npm run lint && npm run tsc",
-    "clean": "rimraf ./dist && rimraf ./coverage",
-    "coverage": "istanbul coverage",
-    "codacy": "cat ./coverage/lcov/lcov.info | codacy-coverage --verbose",
-    "lint": "tslint --type-check -p ./tsconfig.json",
-    "tsc": "tsc --project ./tsconfig.build.json",
-    "test": "karma start --single-run",
-    "test_watch": "karma start"
+    "build": "tsc",
+    "clean": "rimraf ./dist",
+    "tsc": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trwolfe13/markov-typescript.git"
+    "url": "git+https://github.com/0x77dev/markov-typescript.git"
   },
   "keywords": [
     "markov",
@@ -25,12 +20,15 @@
     "random",
     "typescript"
   ],
-  "author": "Tom Wolfe <trwolfe13@gmail.com>",
+  "author": "Mikhail Marynenko <0x77dev@protonmail.com>",
+  "contributors": [
+    "Tom Wolfe <trwolfe13@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/trwolfe13/markov-typescript/issues"
+    "url": "https://github.com/0x77dev/markov-typescript/issues"
   },
-  "homepage": "https://github.com/trwolfe13/markov-typescript#readme",
+  "homepage": "https://github.com/0x77dev/markov-typescript#readme",
   "devDependencies": {
     "codacy-coverage": "^2.0.2",
     "istanbul": "^0.4.5",
