@@ -45,7 +45,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 ## Authors
 
 - **Tom Wolfe** - _Initial work_ - [trwolfe13](https://github.com/trwolfe13)
-- **Mikahil Marynenko** - _Dependencies, package optimizations_ - [trwolfe13](https://github.com/0x77dev)
+- **Mikahil Marynenko** - _Dependencies, package optimizations_ - [0x77dev](https://0x77.page)
 
 See also the list of [contributors](https://github.com/0x77dev/markov-typescript/contributors) who participated in this project.
 
